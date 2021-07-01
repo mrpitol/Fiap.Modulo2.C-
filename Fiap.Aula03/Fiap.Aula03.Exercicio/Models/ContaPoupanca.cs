@@ -17,29 +17,22 @@ namespace Fiap.Aula03.Exercicio.Models
         {
             if (Saldo > 0)
             {
-                Saldo = Saldo + Valor;
+                Saldo += Valor;
                 return true;    
             }
-            else 
-            {
-                Saldo = Saldo;
-                return false;
-            }
-        }
+            return false;
+        }//Depositar
 
-        public bool Retirar(decimal Valor)
+        public bool Retirar(decimal valor)
         {
-            if (Saldo > Valor)
+            if (Saldo >= valor)
             {
-                Saldo = Saldo - Valor;
+                Saldo -= valor;
                 return true;
             }
-            else
-            {
-                Saldo = (Saldo + Valor)*-1;
-                return false;
-            }
+            return false;
+        }//Retirar
 
-        }
-    }
-}
+    }//Class
+
+}//namespace

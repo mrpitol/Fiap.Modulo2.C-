@@ -15,50 +15,78 @@ namespace Fiap.Aula03.Exercicio.Models
         public decimal Limite { get; set; }
         public Cliente Cliente { get; set; }
         public ContaPoupanca ContaPoupanca { get; set; }
-        public double juros { get; set; }
+        public double Juros { get; set; }
 
-
-        public bool Depositar(decimal Valor)
+        //Metodos
+        public bool Depositar(decimal valor)
         {
             if (Saldo > 0)
             {
-                Saldo = Saldo + Valor;
+                Saldo += valor;
                 return true;
             }
-            else
-            {
-                Saldo = Saldo;
-                return false;
-            }
+            return false;
         }//Depositar
 
-        public bool Retirar(decimal Valor)
+        public bool Retirar(decimal valor)
         {
-            if ((Saldo > Valor) & Especial)
+            /*if (Especial)
             {
-                Saldo = (Saldo + Limite) - Valor;
+                if (valor <= Saldo + Limite)
+                {
+                    Saldo -= valor;
+                    return true;
+                }
+            }// Especial true
+            else
+            { 
+                if (valor<= Saldo)
+                    Saldo = valor;
+                return true;    
+            }//Especial else*/
+            // Ternario (Condição ? se verdadeiro : Se falso)
+            if ((Especial && valor <= Saldo + Limite) || (valor <= Saldo))
+            {
+                Saldo -= valor;
                 return true;
             }
-            else
-            {
-                Saldo = Saldo - Valor;
-                return false;
-            }
 
+            return false;
         }//Retirar
-
         public decimal RetornarSaldoTotal()
         {
-            return Saldo;
+            // Ternario (Condição ? se verdadeiro : Se falso)
+            return Especial ? Saldo+Limite : Saldo;
+
+            /*if (Especial)
+            {
+                return Saldo + Limite;
+            }//if
+            else 
+            {
+                return Saldo;
+            }//else*/
+
         }// RetornarSaldoTotal
 
 
-        public bool TransferirParaPoupanca(decimal Valor)
+        public bool TransferirParaPoupanca(decimal valor)
         {
+            //Retirar da conta corrente, se conseguir adiciona o valor na conta poupança
+            // Chama o método retirar da cc e valida se foi possive
+            if (Retirar(valor))
+            {
+                ContaPoupanca.Depositar(valor);
+                return true;
+            }   
+             return false;
 
         }//TransferirParaPoupanca
-        public bool CalcularValorTaxaJuros(decimal Valor)
+        public decimal CalcularValorTaxaJuros(int dias)
         {
+            // Ternario (Condição ? se verdadeiro : Se falso)
+
+            return (Saldo < 0) ? dias * Convert.ToDecimal(Juros) * Saldo * -1 :  0;
 
         }//CalcularValorTaxaJuros
 
