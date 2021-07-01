@@ -1,0 +1,15 @@
+C:\Users\mrpit\source\repos\Fiap.Lista.Exercicios\Fiap.Lista.Exercicios03\bin\Debug\net6.0\Fiap.Lista.Exercicios03.exe
+C:\Users\mrpit\source\repos\Fiap.Lista.Exercicios\Fiap.Lista.Exercicios03\bin\Debug\net6.0\Fiap.Lista.Exercicios03.deps.json
+C:\Users\mrpit\source\repos\Fiap.Lista.Exercicios\Fiap.Lista.Exercicios03\bin\Debug\net6.0\Fiap.Lista.Exercicios03.runtimeconfig.json
+C:\Users\mrpit\source\repos\Fiap.Lista.Exercicios\Fiap.Lista.Exercicios03\bin\Debug\net6.0\Fiap.Lista.Exercicios03.dll
+C:\Users\mrpit\source\repos\Fiap.Lista.Exercicios\Fiap.Lista.Exercicios03\bin\Debug\net6.0\ref\Fiap.Lista.Exercicios03.dll
+C:\Users\mrpit\source\repos\Fiap.Lista.Exercicios\Fiap.Lista.Exercicios03\bin\Debug\net6.0\Fiap.Lista.Exercicios03.pdb
+C:\Users\mrpit\source\repos\Fiap.Lista.Exercicios\Fiap.Lista.Exercicios03\obj\Debug\net6.0\Fiap.Lista.Exercicios03.csproj.AssemblyReference.cache
+C:\Users\mrpit\source\repos\Fiap.Lista.Exercicios\Fiap.Lista.Exercicios03\obj\Debug\net6.0\Fiap.Lista.Exercicios03.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mrpit\source\repos\Fiap.Lista.Exercicios\Fiap.Lista.Exercicios03\obj\Debug\net6.0\Fiap.Lista.Exercicios03.AssemblyInfoInputs.cache
+C:\Users\mrpit\source\repos\Fiap.Lista.Exercicios\Fiap.Lista.Exercicios03\obj\Debug\net6.0\Fiap.Lista.Exercicios03.AssemblyInfo.cs
+C:\Users\mrpit\source\repos\Fiap.Lista.Exercicios\Fiap.Lista.Exercicios03\obj\Debug\net6.0\Fiap.Lista.Exercicios03.csproj.CoreCompileInputs.cache
+C:\Users\mrpit\source\repos\Fiap.Lista.Exercicios\Fiap.Lista.Exercicios03\obj\Debug\net6.0\Fiap.Lista.Exercicios03.dll
+C:\Users\mrpit\source\repos\Fiap.Lista.Exercicios\Fiap.Lista.Exercicios03\obj\Debug\net6.0\ref\Fiap.Lista.Exercicios03.dll
+C:\Users\mrpit\source\repos\Fiap.Lista.Exercicios\Fiap.Lista.Exercicios03\obj\Debug\net6.0\Fiap.Lista.Exercicios03.pdb
+C:\Users\mrpit\source\repos\Fiap.Lista.Exercicios\Fiap.Lista.Exercicios03\obj\Debug\net6.0\Fiap.Lista.Exercicios03.genruntimeconfig.cache

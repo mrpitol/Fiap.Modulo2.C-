@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Fiap.Lista.Exercicios02/1.0.0": {
+        "runtime": {
+          "Fiap.Lista.Exercicios02.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Fiap.Lista.Exercicios02/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

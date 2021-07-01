@@ -1,0 +1,15 @@
+C:\Users\mrpit\source\repos\Fiap.Aula01\Fiap.Aula01.Exemplo01\bin\Debug\net6.0\Fiap.Aula01.Exemplo01.exe
+C:\Users\mrpit\source\repos\Fiap.Aula01\Fiap.Aula01.Exemplo01\bin\Debug\net6.0\Fiap.Aula01.Exemplo01.deps.json
+C:\Users\mrpit\source\repos\Fiap.Aula01\Fiap.Aula01.Exemplo01\bin\Debug\net6.0\Fiap.Aula01.Exemplo01.runtimeconfig.json
+C:\Users\mrpit\source\repos\Fiap.Aula01\Fiap.Aula01.Exemplo01\bin\Debug\net6.0\Fiap.Aula01.Exemplo01.dll
+C:\Users\mrpit\source\repos\Fiap.Aula01\Fiap.Aula01.Exemplo01\bin\Debug\net6.0\ref\Fiap.Aula01.Exemplo01.dll
+C:\Users\mrpit\source\repos\Fiap.Aula01\Fiap.Aula01.Exemplo01\bin\Debug\net6.0\Fiap.Aula01.Exemplo01.pdb
+C:\Users\mrpit\source\repos\Fiap.Aula01\Fiap.Aula01.Exemplo01\obj\Debug\net6.0\Fiap.Aula01.Exemplo01.csproj.AssemblyReference.cache
+C:\Users\mrpit\source\repos\Fiap.Aula01\Fiap.Aula01.Exemplo01\obj\Debug\net6.0\Fiap.Aula01.Exemplo01.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mrpit\source\repos\Fiap.Aula01\Fiap.Aula01.Exemplo01\obj\Debug\net6.0\Fiap.Aula01.Exemplo01.AssemblyInfoInputs.cache
+C:\Users\mrpit\source\repos\Fiap.Aula01\Fiap.Aula01.Exemplo01\obj\Debug\net6.0\Fiap.Aula01.Exemplo01.AssemblyInfo.cs
+C:\Users\mrpit\source\repos\Fiap.Aula01\Fiap.Aula01.Exemplo01\obj\Debug\net6.0\Fiap.Aula01.Exemplo01.csproj.CoreCompileInputs.cache
+C:\Users\mrpit\source\repos\Fiap.Aula01\Fiap.Aula01.Exemplo01\obj\Debug\net6.0\Fiap.Aula01.Exemplo01.dll
+C:\Users\mrpit\source\repos\Fiap.Aula01\Fiap.Aula01.Exemplo01\obj\Debug\net6.0\ref\Fiap.Aula01.Exemplo01.dll
+C:\Users\mrpit\source\repos\Fiap.Aula01\Fiap.Aula01.Exemplo01\obj\Debug\net6.0\Fiap.Aula01.Exemplo01.pdb
+C:\Users\mrpit\source\repos\Fiap.Aula01\Fiap.Aula01.Exemplo01\obj\Debug\net6.0\Fiap.Aula01.Exemplo01.genruntimeconfig.cache
