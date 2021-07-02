@@ -9,13 +9,14 @@ namespace Fiap.Aula03.Exercicio.Models
     class ContaPoupanca
     {
         //Propriedades
-        public decimal Saldo { get; set; }
+        public decimal Saldo { get;  set; }// não permite escrita direta apenas utilizando os metodos
         public double Numero { get; set; }
         public decimal Rendimentos { get; set; }
+       
 
         public bool Depositar(decimal Valor)
         {
-            if (Saldo > 0)
+            if (Saldo >= 0)
             {
                 Saldo += Valor;
                 return true;    

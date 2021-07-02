@@ -9,18 +9,19 @@ namespace Fiap.Aula03.Exercicio.Models
     class ContaCorrente
     {
         //Propriedades
-        public decimal Saldo { get; set; }
+        public decimal Saldo { get;  set; } // não permite escrita direta apenas utilizando os metodos
         public double Numero  { get; set; }
         public bool Especial { get; set; }
         public decimal Limite { get; set; }
         public Cliente Cliente { get; set; }
         public ContaPoupanca ContaPoupanca { get; set; }
         public double Juros { get; set; }
+       
 
         //Metodos
         public bool Depositar(decimal valor)
         {
-            if (Saldo > 0)
+            if (Saldo >= 0)
             {
                 Saldo += valor;
                 return true;
@@ -82,6 +83,19 @@ namespace Fiap.Aula03.Exercicio.Models
              return false;
 
         }//TransferirParaPoupanca
+        public bool SacardaPoupanca(decimal valor)
+        {
+            //Retirar da conta corrente, se conseguir adiciona o valor na conta poupança
+            // Chama o método retirar da cc e valida se foi possive
+            if (ContaPoupanca.Saldo - valor >0)
+            {
+                Saldo -= valor;
+                return true;
+            }  
+            return false;
+
+        }//TransferirParaPoupanca
+
         public decimal CalcularValorTaxaJuros(int dias)
         {
             // Ternario (Condição ? se verdadeiro : Se falso)

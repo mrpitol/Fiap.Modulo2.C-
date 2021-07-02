@@ -9,11 +9,11 @@ namespace Fiap.Aula03.Exercicio.Models
     class Cliente
     {
         //Propriedades
-        public string Name { get; set; }
+        public string Nome { get; set; }
 
         public string Cpf { get; set; }
 
-        public string Telefon { get; set; }
+        public string Telefone { get; set; }
 
     }//Class
 

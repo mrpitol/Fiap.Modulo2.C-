@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Fiap.Aula03.Exercicio/1.0.0": {
+        "runtime": {
+          "Fiap.Aula03.Exercicio.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Fiap.Aula03.Exercicio/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
