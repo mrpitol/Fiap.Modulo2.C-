@@ -3,7 +3,7 @@ using Fiap.Aula04.ExemploHeranca.Models;
 
 namespace Fiap.Aula04.ExemploHeranca
 {
-    class ExemploHerenca
+    class ExemploHeranca
     {
         static void Main(string[] args)
         {
