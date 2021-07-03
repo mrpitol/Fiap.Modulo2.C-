@@ -18,11 +18,18 @@ namespace Fiap.Aula05.Exercicio02
             {
                 Preco=40
             };
+
             //DateTime -> Utiliza o Construtor com ano mes e dia
             var arroz = new Perecivel(4, "Arroz", new DateTime(2022, 12, 25));
 
-            // Chamar o método para Calcular o desconto e exibir o resultado
-            Console.WriteLine($"O valor com desconto é de R${livro.CalcularDesconto(20)}!!");
+            // Chamar o método1 para Calcular o desconto padrão 5% e exibir o resultado
+            Console.WriteLine($"O valor com desconto padrão 5% é de R${livro.CalcularDesconto()}!!");
+            
+            // Chamar o método2 para Calcular o desconto de 20% e exibir o resultado
+            Console.WriteLine($"O valor com desconto de 20% é de R${livro.CalcularDesconto(20)}!!");
+
+            // Chamar o método3 para Calcular o desconto FIAP10 e exibir o resultado
+            Console.WriteLine($"O valor com desconto FIAP10 é de R${livro.CalcularDesconto("FIAP10")}!!");
 
             //Chamar o método para calcular o valor da garantia e exibir o resultado
             Console.WriteLine($"O valor da Garantia é de {eletronico.CalcularGarantiaEstendida()}");
