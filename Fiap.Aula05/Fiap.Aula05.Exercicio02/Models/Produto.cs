@@ -28,8 +28,8 @@ namespace Fiap.Aula05.Exercicio02.Models
         //Metodo
         public decimal CalcularDesconto(decimal porcentagem) 
         {
-            return Preco - (Preco * porcentagem);
-            Console.WriteLine($"O desconto é de R${Preco * porcentagem}!!");
+            return Preco - ((Preco * porcentagem)/100);
+            
 
         }//Metodo
 
