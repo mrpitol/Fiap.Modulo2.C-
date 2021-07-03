@@ -36,6 +36,14 @@ namespace Fiap.Aula05.Exercicio02
 
             //Chamar o método2 do eletronico para calcular o valor da garantia e exibir o resultado
             Console.WriteLine($"O valor da Garantia é de {eletronico.CalcularGarantiaEstendida("FIAP20",20)}");
-        }
-    }
-}
+
+            // Chamar o método3 para Calcular o desconto FIAP10 e exibir o resultado
+            Console.WriteLine($"O valor com desconto FIAPBOOK é de R${livro.CalcularDesconto("FIAPBOOK")}!!");
+
+
+
+        }//Main
+
+    }//Class
+
+}//namesapce

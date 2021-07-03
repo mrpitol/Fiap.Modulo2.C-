@@ -20,7 +20,23 @@ namespace Fiap.Aula05.Exercicio02.Models
             Nome = nome;
             Autor = autor;
         }//Livro(int id, string nome, string autor)
-         
+
+        // Sobrescrever o método definido no pai(override), modificar o comportamento do método na classe filha
+        public override decimal CalcularDesconto() // Altera o Metodo do Pai ( Virtual)
+        {
+            return CalcularDesconto(50);
+        }
+
+        //Sobrescrever o método desconto com cupom, adicionando o FIAPBOOK com 30%
+        public override decimal CalcularDesconto(string cupom)
+        {
+            //Exemplo:FIAPBOOK com 30% ou  FIAP10 com 10% de Desconto
+            //return cupom == "FIAPBOOK" ? CalcularDesconto(30) : cupom == "FIAP10" ? CalcularDesconto(10) : 0 ;// Altera o Metodo do Pai ( Virtual)
+            // Outro Exemplo
+            return cupom == "FIAPBOOK" ? CalcularDesconto(30) : base.CalcularDesconto(30) ; 
+        }//Metodo3
+
+
     }//Class
 
 }//namespace

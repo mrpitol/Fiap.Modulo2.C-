@@ -30,7 +30,7 @@ namespace Fiap.Aula05.Exercicio02.Models
 
         //Sobrecarga de Metodo: método com mesmo nome e parâmetros diferentes
 
-        public decimal CalcularDesconto() 
+        public virtual decimal CalcularDesconto() // Ao acrescentar VIRTUAL permite que seja sobrescrito pelo filho (override)
         {
             //Exemplo desconto padrão 5%
             //return Preco - Preco *0,05m
@@ -44,7 +44,7 @@ namespace Fiap.Aula05.Exercicio02.Models
 
         }//Metodo2
 
-        public decimal CalcularDesconto(string cupom)
+        public virtual decimal CalcularDesconto(string cupom) // Ao acrescentar VIRTUAL permite que seja sobrescrito pelo filho (override)
         {
             //Exemplo: FIAP10 dá 10% de Desconto
             return cupom == "FIAP10" ? CalcularDesconto(10) : 0;
