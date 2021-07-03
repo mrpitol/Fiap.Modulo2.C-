@@ -23,10 +23,17 @@ namespace Fiap.Aula05.Exercicio02.Models
         public decimal CalcularGarantiaEstendida() 
         {
            
-            return !Garantia ? 0: Preco - (Preco * 0.1m); // o m no final converte como monetário
+            return Garantia ? Preco - (Preco * 0.1m) : 0; // o m no final converte como monetário
 
-        }//Metodo
+        }//Metodo1
 
+        public decimal CalcularGarantiaEstendida(string cupom,decimal porcentagem)
+        {
+
+            return cupom == "FIAP20" && Garantia ?  Preco - (Preco *(porcentagem* 0.01m)) : 0; // o m no final converte como monetário
+
+        }//Metodo2
+         
     }//Class
 
 }//namespace
