@@ -9,20 +9,28 @@ namespace Fiap.Aula03.Exercicio
 
         {
             //Instanciar os objetos e atribuir os valores aos seus atributos
-            Cliente cliente = new Cliente();
+            
+            //Cliente cliente = new Cliente();-> Construtor padrão
             ContaCorrente cc = new ContaCorrente(); 
             ContaPoupanca cp = new ContaPoupanca();
             cc.ContaPoupanca = cp;
-
+            
             // Ler os dados do Cliente (nome, cpf e telefone)
             Console.WriteLine("Por favor, digite o nome do Cliente");
-            cliente.Nome = Console.ReadLine();
+            //cliente.Nome = Console.ReadLine();-> Construtor padrão
+            string nome = Console.ReadLine();//-> Construtor Cliente
 
             Console.WriteLine("Por favor, digite o cpf do Cliente");
-            cliente.Cpf = Console.ReadLine();
+            //cliente.Cpf = Console.ReadLine();-> Construtor padrão
+            string cpf = Console.ReadLine();//-> Construtor Cliente
 
             Console.WriteLine("Por favor, digite o telefone do Cliente");
-            cliente.Telefone = Console.ReadLine();
+            //cliente.Telefone = Console.ReadLine();-> Construtor padrão
+            string telefone = Console.ReadLine();//-> Construtor Cliente
+
+            //Instanciando o construtor Cliente - precisa considerar a declaração das variaveis
+            Cliente cliente = new Cliente(nome: nome, cpf: cpf, telefone: telefone);
+
 
             // Ler o dados da conta poupança (numero)
             Console.WriteLine("Por favor, digite o Numero da Conta poupança");
@@ -58,15 +66,31 @@ namespace Fiap.Aula03.Exercicio
                 {
                     case 1:
                         Console.WriteLine("Por favor, digite o Valor do Deposito");
+                        
                         var valor = decimal.Parse(Console.ReadLine());
-                        cc.Depositar(valor);
-                        Console.WriteLine($"O Saldo é {cc.Saldo} e o saldo Total é {cc.RetornarSaldoTotal()}");
-                        break;
+                        try
+                        { 
+                            cc.Depositar(valor);
+                            Console.WriteLine($"O Saldo é {cc.Saldo} e o saldo Total é {cc.RetornarSaldoTotal()}");
+                        }
+                        catch (Exception e)
+                        {
+                            Console.WriteLine(e.Message);
+                        }
+                            break;
                     case 2:
+
                         Console.WriteLine("Por favor, digite o Valor para Saque");
                         valor = decimal.Parse(Console.ReadLine());
-                        cc.Retirar(valor);
-                        Console.WriteLine($"O Saldo é {cc.Saldo} e o saldo Total é {cc.RetornarSaldoTotal()}");
+                        try
+                        {
+                         cc.Retirar(valor);
+                         Console.WriteLine($"O Saldo é {cc.Saldo} e o saldo Total é {cc.RetornarSaldoTotal()}");
+                        }
+                        catch (Exception e)
+                        {
+                            Console.WriteLine(e.Message);
+                        }
                         break;
                     case 3:
                         Console.WriteLine("Por favor, digite o Valor para Transfererncia");

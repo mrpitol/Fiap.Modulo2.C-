@@ -6,28 +6,29 @@ using System.Threading.Tasks;
 
 namespace Fiap.Aula03.Exercicio.Models
 {
-    class ContaCorrente
+    class ContaCorrente:Conta, IContaInvestimento
     {
         //Propriedades
-        public decimal Saldo { get;  set; } // não permite escrita direta apenas utilizando os metodos
-        public double Numero  { get; set; }
+       // public decimal Saldo { get;  set; } // não permite escrita direta apenas utilizando os metodos
+       // public double Numero  { get; set; }
         public bool Especial { get; set; }
         public decimal Limite { get; set; }
         public Cliente Cliente { get; set; }
         public ContaPoupanca ContaPoupanca { get; set; }
         public double Juros { get; set; }
-       
+
 
         //Metodos
-        public bool Depositar(decimal valor)
+        /*public bool Depositar(decimal Valor)
         {
             if (Saldo >= 0)
             {
-                Saldo += valor;
-                return true;
+                Saldo += Valor;
+                return true;    
             }
             return false;
-        }//Depositar
+        }//Depositar - tirado do filho e colocado no pai - conta*/
+        
 
         public bool Retirar(decimal valor)
         {
@@ -52,7 +53,7 @@ namespace Fiap.Aula03.Exercicio.Models
                 return true;
             }
 
-            return false;
+            throw new Exception("Saldo Insuficiente");
         }//Retirar
         public decimal RetornarSaldoTotal()
         {
@@ -86,7 +87,7 @@ namespace Fiap.Aula03.Exercicio.Models
         public bool SacardaPoupanca(decimal valor)
         {
             //Retirar da conta corrente, se conseguir adiciona o valor na conta poupança
-            // Chama o método retirar da cc e valida se foi possive
+            // Chama o método retirar da cc e valida se foi possivel
             if (ContaPoupanca.Saldo - valor >0)
             {
                 Saldo -= valor;
@@ -104,5 +105,9 @@ namespace Fiap.Aula03.Exercicio.Models
 
         }//CalcularValorTaxaJuros
 
+        public decimal CalcularContaInvestimento(decimal taxa)
+        {
+            return Saldo * taxa;
+        }
     }//Class
 }//namespace

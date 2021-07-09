@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace Fiap.Aula03.Exercicio.Models
 {
-    class ContaPoupanca
+    class ContaPoupanca:Conta
     {
         //Propriedades
-        public decimal Saldo { get;  set; }// não permite escrita direta apenas utilizando os metodos
-        public double Numero { get; set; }
+        //public decimal Saldo { get;  set; }// não permite escrita direta apenas utilizando os metodos
+        //public double Numero { get; set; }
         public decimal Rendimentos { get; set; }
        
 
-        public bool Depositar(decimal Valor)
+        /*public bool Depositar(decimal Valor)
         {
             if (Saldo >= 0)
             {
@@ -22,7 +22,7 @@ namespace Fiap.Aula03.Exercicio.Models
                 return true;    
             }
             return false;
-        }//Depositar
+        }//Depositar - tirado do filho e colocado no pai - conta*/
 
         public bool Retirar(decimal valor)
         {

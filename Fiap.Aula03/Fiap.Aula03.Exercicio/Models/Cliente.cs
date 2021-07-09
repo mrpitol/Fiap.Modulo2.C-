@@ -15,6 +15,15 @@ namespace Fiap.Aula03.Exercicio.Models
 
         public string Telefone { get; set; }
 
+        //Construtores
+        public Cliente(string nome, string cpf, string telefone)
+        { 
+            Nome= nome;
+            Cpf = cpf;
+            Telefone = telefone;
+
+        }
+
     }//Class
 
 }//namespace
